@@ -56,7 +56,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <QueryClientProvider client={queryClient}>
       <ToastContainer />
       <RouterProvider router={router} />
-      <ReactQueryDevtools initialIsOpen={true} />
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   </React.StrictMode>,
 )

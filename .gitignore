@@ -25,3 +25,5 @@ dist-ssr
 
 coverage
 ./coverage
+test-results
+playwright-report

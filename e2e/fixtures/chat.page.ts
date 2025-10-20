@@ -18,7 +18,7 @@ export class ChatPage {
     this.header = page.locator('.bg-gradient-to-r').first();
     this.welcomeText = page.getByText('Happy customs!');
     this.instructionText = page.getByText('Request sample result on right!');
-    this.footer = page.locator('footer');
+    this.footer = page.getByTestId('footer');
     this.loadingComponent = page.getByTestId('loading-component');
     this.errorComponent = page.getByTestId('error-component');
     this.noContentComponent = page.getByTestId('no-content-component');

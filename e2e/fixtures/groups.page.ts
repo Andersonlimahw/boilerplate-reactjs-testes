@@ -19,7 +19,7 @@ export class GroupsPage {
     this.layoutContainer = page.getByTestId('groups-layout');
     this.successSection = page.getByTestId('groups-success');
     this.contentPanel = page.getByTestId('groups-content');
-    this.footer = page.locator('footer');
+    this.footer = page.getByTestId('footer');
     this.loadingComponent = page.getByTestId('loading-component');
     this.errorComponent = page.getByTestId('error-api-component');
     this.noContentComponent = page.getByTestId('no-content-component');

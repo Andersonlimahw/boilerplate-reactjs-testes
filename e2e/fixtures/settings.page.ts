@@ -33,7 +33,7 @@ export class SettingsPage {
     this.page = page;
     this.header = page.getByTestId('settings-header');
     this.settingsTitle = page.getByTestId('settings-title');
-    this.footer = page.locator('footer');
+    this.footer = page.getByTestId('footer');
     this.loadingComponent = page.getByTestId('loading-component');
     this.errorComponent = page.getByTestId('error-component');
     this.noContentComponent = page.getByTestId('no-content-component');

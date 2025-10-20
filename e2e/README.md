@@ -202,13 +202,16 @@ await goOffline(page);
 - ✅ Footer
 - ✅ Navegação direta
 
-### Navigation (8/20 cenários - 40%)
+### Navigation (11/20 cenários - 55%)
 - ✅ Login para Chat
 - ✅ Navegação direta (Chat/Profile)
 - ✅ Botão voltar/avançar
 - ✅ Navegação entre páginas
 - ✅ Recarregamento
 - ✅ Performance
+ - ✅ Preservação de estado (tema)
+ - ✅ Deep linking com parâmetros
+ - ✅ Navegação programática
 
 ### API Feedback (9/22 cenários - 41%)
 - ✅ Estado de loading

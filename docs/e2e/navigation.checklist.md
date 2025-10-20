@@ -78,32 +78,49 @@
 - **Status**: ⏳ Pendente
 - **Prioridade**: P1
 
-### ⏳ Cenário 8: Preservação de estado durante navegação
-- **Status**: ⏳ Pendente
-- **Prioridade**: P2
+### ✅ Cenário 8: Preservação de estado durante navegação
+- **Tags**: `@navigation` `@state` `@P2`
+- **Status**: ✅ Implementado
+- **Arquivo**: `e2e/tests/navigation.spec.ts`
+- **Validações**:
+  - ✅ Tema preservado entre rotas (dark)
+  - ✅ Gradiente aplicado em Chat/Profile
+  - ✅ Estado não é perdido ao voltar
 
-### ⏳ Cenário 9: Deep linking - Acesso direto com parâmetros
-- **Status**: ⏳ Pendente
-- **Prioridade**: P2
+### ✅ Cenário 9: Deep linking - Acesso direto com parâmetros
+- **Tags**: `@navigation` `@routing` `@P2`
+- **Status**: ✅ Implementado
+- **Arquivo**: `e2e/tests/navigation.spec.ts`
+- **Validações**:
+  - ✅ Acesso direto com query string
+  - ✅ Página carrega corretamente
+  - ✅ URL mantém parâmetros
 
-### ⏳ Cenário 10: Navegação programática
-- **Status**: ⏳ Pendente
-- **Prioridade**: P1
+### ✅ Cenário 10: Navegação programática
+- **Tags**: `@navigation` `@programmatic` `@P1`
+- **Status**: ✅ Implementado
+- **Arquivo**: `e2e/tests/navigation.spec.ts`
+- **Validações**:
+  - ✅ Navegação via History API
+  - ✅ URL atualizada corretamente
+  - ✅ Página de destino carregada
 
 ### ⏳ Cenário 11: Proteção de rotas autenticadas
-- **Status**: ⏳ Pendente
-- **Prioridade**: P0
+- **Tags**: `@navigation` `@auth` `@security` `@P0`
+- **Status**: ⏳ Pendente (teste marcado como fixme)
+- **Arquivo**: `e2e/tests/navigation.spec.ts`
+- **Observação**: Rotas ainda não são protegidas no router atual
 
 ---
 
 ## Resumo de Implementação
 
 - **Total de Cenários**: 20
-- **Implementados**: 8 (40%)
-- **Pendentes**: 12 (60%)
+- **Implementados**: 11 (55%)
+- **Pendentes**: 9 (45%)
 - **Prioridade P0 (Crítico)**: 3/4 (75%)
-- **Prioridade P1 (Alto)**: 3/6 (50%)
-- **Prioridade P2 (Médio)**: 2/7 (29%)
+- **Prioridade P1 (Alto)**: 4/6 (67%)
+- **Prioridade P2 (Médio)**: 4/7 (57%)
 
 ---
 

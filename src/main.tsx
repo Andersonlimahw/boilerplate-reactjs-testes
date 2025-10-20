@@ -11,7 +11,7 @@ import { Login } from './pages/Login/index.js';
 import { Chat } from './pages/Chat';
 import { Groups } from './pages/Groups';
 import { Profile } from './pages/Profile';
-import { Comunity } from './pages/Comunity';
+import { Community } from './pages/Community';
 import { Settings } from './pages/Settings';
 
 import { startMirage } from './mocks/miragejs/index.js';
@@ -49,8 +49,8 @@ const router = createBrowserRouter([
     element: <Settings />,
   },
   {
-    path: "/comunity",
-    element: <Comunity />,
+    path: "/community",
+    element: <Community />,
   },
   {
     path: "/profile",

@@ -151,4 +151,83 @@ test.describe('Feature: Navegação e Rotas', () => {
     // Then: Então a transição deve ocorrer em menos de 2000ms (reasonable for E2E)
     expect(navigationTime).toBeLessThan(2000);
   });
+
+  test('Cenário 7: Navegação para rota inexistente (404) @navigation @error @P1', async ({ page }) => {
+    test.fixme(true, 'Rota 404/NotFound não implementada no router atual.');
+
+    // Given: Dado que estou em qualquer página
+    await loginPage.goto();
+
+    // When: Quando eu navego para uma rota que não existe
+    await page.goto('/rota-invalida');
+
+    // Then: Então devo ver uma página 404 ou ser redirecionado
+    // Expectativa pendente até implementação do NotFound/redirect
+  });
+
+  test('Cenário 8: Preservação de estado durante navegação @navigation @state @P2', async ({ page }) => {
+    // Given: Dado que estou na página "/chat" e selecionei o tema "dark"
+    await loginPage.goto();
+    await loginPage.clickLogin();
+    await page.waitForURL('/chat', { timeout: 5000 });
+
+    // Abre o seletor de tema e escolhe "dark"
+    const themeTrigger = page.getByLabel('Theme switcher');
+    await themeTrigger.click();
+    await page.getByRole('menuitem', { name: /dark/i }).click();
+
+    // Verifica que o header aplicou o gradiente do tema dark
+    await expect(chatPage.header).toHaveAttribute('class', /from-zinc-900/);
+    await expect(chatPage.header).toHaveAttribute('class', /to-zinc-400/);
+
+    // When: Quando eu navego para "/profile" e depois volto para "/chat"
+    await page.goto('/profile');
+    await expect(profilePage.header).toHaveAttribute('class', /from-zinc-900/);
+    await expect(profilePage.header).toHaveAttribute('class', /to-zinc-400/);
+
+    await page.goto('/chat');
+
+    // Then: Então o tema "dark" deve permanecer ativo e o estado preservado
+    await expect(chatPage.header).toHaveAttribute('class', /from-zinc-900/);
+    await expect(chatPage.header).toHaveAttribute('class', /to-zinc-400/);
+  });
+
+  test('Cenário 9: Deep linking - Acesso direto com parâmetros @navigation @routing @P2', async ({ page }) => {
+    // Given: Dado que estou abrindo a aplicação pela primeira vez
+    // When: Quando eu acesso uma URL com parâmetros
+    await page.goto('/chat?id=123');
+
+    // Then: Então a página deve carregar corretamente e manter os parâmetros
+    await expect(chatPage.header).toBeVisible();
+    expect(page.url()).toContain('/chat?id=123');
+
+    // E componentes principais devem renderizar
+    await expect(chatPage.apiResponse).toBeVisible();
+  });
+
+  test('Cenário 10: Navegação programática @navigation @programmatic @P1', async ({ page }) => {
+    // Given: Dado que estou na página de login "/"
+    await loginPage.goto();
+    await expect(loginPage.loginButton).toBeVisible();
+
+    // When: Quando a navegação é disparada via History API no código
+    await page.evaluate(() => {
+      window.history.pushState({}, '', '/chat');
+      window.dispatchEvent(new PopStateEvent('popstate'));
+    });
+
+    // Then: Então devo ser redirecionado para "/chat" e a URL atualizada
+    await expect(chatPage.header).toBeVisible();
+    expect(new URL(page.url()).pathname).toBe('/chat');
+  });
+
+  test('Cenário 11: Proteção de rotas autenticadas @navigation @auth @security @P0', async ({ page }) => {
+    test.fixme(true, 'Rotas protegidas não implementadas (acesso a /chat e /profile sem autenticação é permitido).');
+
+    // Given: Dado que não estou autenticado
+    // When: Quando tento acessar "/chat" ou "/profile" diretamente
+    await page.goto('/chat');
+
+    // Then: Então devo ser redirecionado para "/" (pendente de implementação)
+  });
 });

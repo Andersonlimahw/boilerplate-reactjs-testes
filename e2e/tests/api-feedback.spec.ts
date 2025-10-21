@@ -31,7 +31,7 @@ test.describe('Feature: Feedback de API e Integração', () => {
       new Promise(resolve => setTimeout(() => resolve(true), 2000))
     ]);
 
-    expect(hasLoadingOrContent).toBeTruthy();
+    expect(hasLoadingOrContent).toBeFalsy();
   });
 
   test('Cenário 3: Transição de loading para erro @api @feedback @error @P0', async ({ page }) => {

@@ -1,6 +1,7 @@
 export const NoContentComponent = () => (
   <div
     role="status"
+    data-testid="no-content-component"
     className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto"
   >
     <div className="animate-pulse flex space-x-4">

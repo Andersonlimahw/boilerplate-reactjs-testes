@@ -1,0 +1,800 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Community Page > Cenário 2: Snapshot do componente 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full h-40 bg-gradient-to-r from-purple-500 to-blue-500"
+    data-testid="community-header"
+  >
+    <div
+      class="flex items-center justify-center h-full"
+    >
+      <svg
+        class="text-white"
+        fill="currentColor"
+        height="48"
+        viewBox="0 0 256 256"
+        width="48"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    class="container mx-auto mt-[-128px] rounded-sm"
+  >
+    <div
+      class="py-6 min-h-screen"
+    >
+      <div
+        class="shadow-lg rounded h-full"
+      >
+        <div
+          class="flex flex-col w-full bg-white dark:bg-gray-900"
+        >
+          <div
+            class="w-full p-8"
+          >
+            <div
+              class="max-w-7xl mx-auto"
+            >
+              <h1
+                class="text-4xl font-bold mb-8 text-center"
+                data-testid="communities-title"
+              >
+                Discover Communities
+              </h1>
+              <div
+                class="mb-8 space-y-4"
+              >
+                <div
+                  class="relative"
+                  data-testid="search-section"
+                >
+                  <svg
+                    class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"
+                    fill="currentColor"
+                    height="20"
+                    viewBox="0 0 256 256"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    />
+                  </svg>
+                  <input
+                    class="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    data-testid="search-input"
+                    placeholder="Search communities..."
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="flex flex-wrap gap-4"
+                  data-testid="filters-section"
+                >
+                  <select
+                    class="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    data-testid="category-filter"
+                  >
+                    <option
+                      value="all"
+                    >
+                      All Categories
+                    </option>
+                    <option
+                      value="technology"
+                    >
+                      Technology
+                    </option>
+                    <option
+                      value="business"
+                    >
+                      Business
+                    </option>
+                    <option
+                      value="education"
+                    >
+                      Education
+                    </option>
+                    <option
+                      value="entertainment"
+                    >
+                      Entertainment
+                    </option>
+                    <option
+                      value="sports"
+                    >
+                      Sports
+                    </option>
+                    <option
+                      value="health"
+                    >
+                      Health
+                    </option>
+                    <option
+                      value="lifestyle"
+                    >
+                      Lifestyle
+                    </option>
+                    <option
+                      value="other"
+                    >
+                      Other
+                    </option>
+                  </select>
+                  <select
+                    class="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    data-testid="sort-filter"
+                  >
+                    <option
+                      value="popular"
+                    >
+                      Most Popular
+                    </option>
+                    <option
+                      value="newest"
+                    >
+                      Newest
+                    </option>
+                    <option
+                      value="members"
+                    >
+                      Most Members
+                    </option>
+                    <option
+                      value="name"
+                    >
+                      Name (A-Z)
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                data-testid="communities-grid"
+              >
+                <div
+                  class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+                  data-testid="community-card-1"
+                >
+                  <div
+                    class="relative h-48 overflow-hidden"
+                  >
+                    <img
+                      alt="React Developers"
+                      class="w-full h-full object-cover"
+                      data-testid="community-image"
+                      src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=400&fit=crop"
+                    />
+                    <div
+                      class="absolute top-2 right-2 bg-blue-500 rounded-full p-1"
+                      data-testid="verified-badge"
+                    >
+                      <svg
+                        class="text-white"
+                        fill="currentColor"
+                        height="24"
+                        viewBox="0 0 256 256"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="p-6"
+                  >
+                    <div
+                      class="flex items-start justify-between mb-3"
+                    >
+                      <h3
+                        class="text-xl font-bold text-gray-800 dark:text-white"
+                        data-testid="community-name"
+                      >
+                        React Developers
+                      </h3>
+                    </div>
+                    <p
+                      class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2"
+                      data-testid="community-description"
+                    >
+                      A community for React developers to share knowledge, best practices, and help each other grow.
+                    </p>
+                    <div
+                      class="flex items-center justify-between mb-4"
+                    >
+                      <div
+                        class="flex items-center gap-2"
+                        data-testid="members-count"
+                      >
+                        <svg
+                          class="text-gray-500"
+                          fill="currentColor"
+                          height="20"
+                          viewBox="0 0 256 256"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                          />
+                        </svg>
+                        <span
+                          class="text-sm text-gray-600 dark:text-gray-400"
+                        >
+                          15,420 members
+                        </span>
+                      </div>
+                      <span
+                        class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs font-medium text-gray-600 dark:text-gray-300 capitalize"
+                        data-testid="community-category"
+                      >
+                        technology
+                      </span>
+                    </div>
+                    <a
+                      class="block w-full text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200"
+                      data-testid="join-button"
+                      href="/community/react-developers"
+                    >
+                      Join Community
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+                  data-testid="community-card-2"
+                >
+                  <div
+                    class="relative h-48 overflow-hidden"
+                  >
+                    <img
+                      alt="Startup Founders"
+                      class="w-full h-full object-cover"
+                      data-testid="community-image"
+                      src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=400&fit=crop"
+                    />
+                    <div
+                      class="absolute top-2 right-2 bg-blue-500 rounded-full p-1"
+                      data-testid="verified-badge"
+                    >
+                      <svg
+                        class="text-white"
+                        fill="currentColor"
+                        height="24"
+                        viewBox="0 0 256 256"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="p-6"
+                  >
+                    <div
+                      class="flex items-start justify-between mb-3"
+                    >
+                      <h3
+                        class="text-xl font-bold text-gray-800 dark:text-white"
+                        data-testid="community-name"
+                      >
+                        Startup Founders
+                      </h3>
+                    </div>
+                    <p
+                      class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2"
+                      data-testid="community-description"
+                    >
+                      Connect with fellow entrepreneurs, share experiences, and get advice on building successful startups.
+                    </p>
+                    <div
+                      class="flex items-center justify-between mb-4"
+                    >
+                      <div
+                        class="flex items-center gap-2"
+                        data-testid="members-count"
+                      >
+                        <svg
+                          class="text-gray-500"
+                          fill="currentColor"
+                          height="20"
+                          viewBox="0 0 256 256"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                          />
+                        </svg>
+                        <span
+                          class="text-sm text-gray-600 dark:text-gray-400"
+                        >
+                          8,900 members
+                        </span>
+                      </div>
+                      <span
+                        class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs font-medium text-gray-600 dark:text-gray-300 capitalize"
+                        data-testid="community-category"
+                      >
+                        business
+                      </span>
+                    </div>
+                    <a
+                      class="block w-full text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200"
+                      data-testid="join-button"
+                      href="/community/startup-founders"
+                    >
+                      Join Community
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+                  data-testid="community-card-3"
+                >
+                  <div
+                    class="relative h-48 overflow-hidden"
+                  >
+                    <img
+                      alt="Online Learning Hub"
+                      class="w-full h-full object-cover"
+                      data-testid="community-image"
+                      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=400&fit=crop"
+                    />
+                    <div
+                      class="absolute top-2 right-2 bg-blue-500 rounded-full p-1"
+                      data-testid="verified-badge"
+                    >
+                      <svg
+                        class="text-white"
+                        fill="currentColor"
+                        height="24"
+                        viewBox="0 0 256 256"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="p-6"
+                  >
+                    <div
+                      class="flex items-start justify-between mb-3"
+                    >
+                      <h3
+                        class="text-xl font-bold text-gray-800 dark:text-white"
+                        data-testid="community-name"
+                      >
+                        Online Learning Hub
+                      </h3>
+                    </div>
+                    <p
+                      class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2"
+                      data-testid="community-description"
+                    >
+                      Share courses, learning resources, and study tips with a global community of learners.
+                    </p>
+                    <div
+                      class="flex items-center justify-between mb-4"
+                    >
+                      <div
+                        class="flex items-center gap-2"
+                        data-testid="members-count"
+                      >
+                        <svg
+                          class="text-gray-500"
+                          fill="currentColor"
+                          height="20"
+                          viewBox="0 0 256 256"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                          />
+                        </svg>
+                        <span
+                          class="text-sm text-gray-600 dark:text-gray-400"
+                        >
+                          23,500 members
+                        </span>
+                      </div>
+                      <span
+                        class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs font-medium text-gray-600 dark:text-gray-300 capitalize"
+                        data-testid="community-category"
+                      >
+                        education
+                      </span>
+                    </div>
+                    <a
+                      class="block w-full text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200"
+                      data-testid="join-button"
+                      href="/community/online-learning"
+                    >
+                      Join Community
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+                  data-testid="community-card-4"
+                >
+                  <div
+                    class="relative h-48 overflow-hidden"
+                  >
+                    <img
+                      alt="Fitness Enthusiasts"
+                      class="w-full h-full object-cover"
+                      data-testid="community-image"
+                      src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=400&fit=crop"
+                    />
+                  </div>
+                  <div
+                    class="p-6"
+                  >
+                    <div
+                      class="flex items-start justify-between mb-3"
+                    >
+                      <h3
+                        class="text-xl font-bold text-gray-800 dark:text-white"
+                        data-testid="community-name"
+                      >
+                        Fitness Enthusiasts
+                      </h3>
+                    </div>
+                    <p
+                      class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2"
+                      data-testid="community-description"
+                    >
+                      Workout routines, nutrition advice, and motivation to help you reach your fitness goals.
+                    </p>
+                    <div
+                      class="flex items-center justify-between mb-4"
+                    >
+                      <div
+                        class="flex items-center gap-2"
+                        data-testid="members-count"
+                      >
+                        <svg
+                          class="text-gray-500"
+                          fill="currentColor"
+                          height="20"
+                          viewBox="0 0 256 256"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                          />
+                        </svg>
+                        <span
+                          class="text-sm text-gray-600 dark:text-gray-400"
+                        >
+                          12,300 members
+                        </span>
+                      </div>
+                      <span
+                        class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs font-medium text-gray-600 dark:text-gray-300 capitalize"
+                        data-testid="community-category"
+                      >
+                        health
+                      </span>
+                    </div>
+                    <a
+                      class="block w-full text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200"
+                      data-testid="join-button"
+                      href="/community/fitness"
+                    >
+                      Join Community
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+                  data-testid="community-card-5"
+                >
+                  <div
+                    class="relative h-48 overflow-hidden"
+                  >
+                    <img
+                      alt="Digital Nomads"
+                      class="w-full h-full object-cover"
+                      data-testid="community-image"
+                      src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=400&fit=crop"
+                    />
+                    <div
+                      class="absolute top-2 right-2 bg-blue-500 rounded-full p-1"
+                      data-testid="verified-badge"
+                    >
+                      <svg
+                        class="text-white"
+                        fill="currentColor"
+                        height="24"
+                        viewBox="0 0 256 256"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="p-6"
+                  >
+                    <div
+                      class="flex items-start justify-between mb-3"
+                    >
+                      <h3
+                        class="text-xl font-bold text-gray-800 dark:text-white"
+                        data-testid="community-name"
+                      >
+                        Digital Nomads
+                      </h3>
+                    </div>
+                    <p
+                      class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2"
+                      data-testid="community-description"
+                    >
+                      Work remotely from anywhere in the world. Share tips, destinations, and remote work opportunities.
+                    </p>
+                    <div
+                      class="flex items-center justify-between mb-4"
+                    >
+                      <div
+                        class="flex items-center gap-2"
+                        data-testid="members-count"
+                      >
+                        <svg
+                          class="text-gray-500"
+                          fill="currentColor"
+                          height="20"
+                          viewBox="0 0 256 256"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                          />
+                        </svg>
+                        <span
+                          class="text-sm text-gray-600 dark:text-gray-400"
+                        >
+                          9,800 members
+                        </span>
+                      </div>
+                      <span
+                        class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs font-medium text-gray-600 dark:text-gray-300 capitalize"
+                        data-testid="community-category"
+                      >
+                        lifestyle
+                      </span>
+                    </div>
+                    <a
+                      class="block w-full text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200"
+                      data-testid="join-button"
+                      href="/community/digital-nomads"
+                    >
+                      Join Community
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+                  data-testid="community-card-6"
+                >
+                  <div
+                    class="relative h-48 overflow-hidden"
+                  >
+                    <img
+                      alt="Gaming Community"
+                      class="w-full h-full object-cover"
+                      data-testid="community-image"
+                      src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=400&fit=crop"
+                    />
+                    <div
+                      class="absolute top-2 right-2 bg-blue-500 rounded-full p-1"
+                      data-testid="verified-badge"
+                    >
+                      <svg
+                        class="text-white"
+                        fill="currentColor"
+                        height="24"
+                        viewBox="0 0 256 256"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="p-6"
+                  >
+                    <div
+                      class="flex items-start justify-between mb-3"
+                    >
+                      <h3
+                        class="text-xl font-bold text-gray-800 dark:text-white"
+                        data-testid="community-name"
+                      >
+                        Gaming Community
+                      </h3>
+                    </div>
+                    <p
+                      class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2"
+                      data-testid="community-description"
+                    >
+                      Gamers unite! Discuss games, share gameplay, organize tournaments, and make new gaming friends.
+                    </p>
+                    <div
+                      class="flex items-center justify-between mb-4"
+                    >
+                      <div
+                        class="flex items-center gap-2"
+                        data-testid="members-count"
+                      >
+                        <svg
+                          class="text-gray-500"
+                          fill="currentColor"
+                          height="20"
+                          viewBox="0 0 256 256"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                          />
+                        </svg>
+                        <span
+                          class="text-sm text-gray-600 dark:text-gray-400"
+                        >
+                          31,200 members
+                        </span>
+                      </div>
+                      <span
+                        class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs font-medium text-gray-600 dark:text-gray-300 capitalize"
+                        data-testid="community-category"
+                      >
+                        entertainment
+                      </span>
+                    </div>
+                    <a
+                      class="block w-full text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200"
+                      data-testid="join-button"
+                      href="/community/gaming"
+                    >
+                      Join Community
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-12 text-center"
+                data-testid="communities-stats"
+              >
+                <p
+                  class="text-gray-600 dark:text-gray-400"
+                >
+                  Showing 6 communities
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/3 fixed bg-zinc-900 w-full bottom-0 py-4 px-2 flex flex-col z-index-[99]"
+        data-testid="footer"
+      >
+        <div
+          class="py-2 px-3 bg-grey-lighter flex flex-row justify-between items-center"
+        >
+          <span
+            class="cursor-pointer hover:scale-110 flex gap-4"
+          >
+            <svg
+              class="mr-5"
+              data-testid="button_power"
+              fill="#ef4444"
+              height="32"
+              viewBox="0 0 256 256"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M120,128V48a8,8,0,0,1,16,0v80a8,8,0,0,1-16,0Zm60.37-78.7a8,8,0,0,0-8.74,13.4C194.74,77.77,208,101.57,208,128a80,80,0,0,1-160,0c0-26.43,13.26-50.23,36.37-65.3a8,8,0,0,0-8.74-13.4C47.9,67.38,32,96.06,32,128a96,96,0,0,0,192,0C224,96.06,208.1,67.38,180.37,49.3Z"
+              />
+            </svg>
+            <button
+              aria-expanded="false"
+              aria-haspopup="menu"
+              aria-label="Theme switcher"
+              class="ml-5 flex"
+              data-state="closed"
+              id="radix-:r2:"
+              type="button"
+            >
+              <svg
+                fill="#f1f1f1"
+                height="32"
+                viewBox="0 0 256 256"
+                width="32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M200.77,53.89A103.27,103.27,0,0,0,128,24h-1.07A104,104,0,0,0,24,128c0,43,26.58,79.06,69.36,94.17A32,32,0,0,0,136,192a16,16,0,0,1,16-16h46.21a31.81,31.81,0,0,0,31.2-24.88,104.43,104.43,0,0,0,2.59-24A103.28,103.28,0,0,0,200.77,53.89Zm13,93.71A15.89,15.89,0,0,1,198.21,160H152a32,32,0,0,0-32,32,16,16,0,0,1-21.31,15.07C62.49,194.3,40,164,40,128a88,88,0,0,1,87.09-88h.9a88.35,88.35,0,0,1,88,87.25A88.86,88.86,0,0,1,213.81,147.6ZM140,76a12,12,0,1,1-12-12A12,12,0,0,1,140,76ZM96,100A12,12,0,1,1,84,88,12,12,0,0,1,96,100Zm0,56a12,12,0,1,1-12-12A12,12,0,0,1,96,156Zm88-56a12,12,0,1,1-12-12A12,12,0,0,1,184,100Z"
+                />
+              </svg>
+            </button>
+            <svg
+              fill="currentColor"
+              height="32"
+              viewBox="0 0 256 256"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M216,48H40A16,16,0,0,0,24,64V224a15.84,15.84,0,0,0,9.25,14.5A16.05,16.05,0,0,0,40,240a15.89,15.89,0,0,0,10.25-3.78l.09-.07L83,208H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48ZM40,224h0ZM216,192H80a8,8,0,0,0-5.23,1.95L40,224V64H216Z"
+              />
+            </svg>
+            <svg
+              fill="currentColor"
+              height="32"
+              viewBox="0 0 256 256"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"
+              />
+            </svg>
+            <svg
+              fill="currentColor"
+              height="32"
+              viewBox="0 0 256 256"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"
+              />
+            </svg>
+            <svg
+              fill="currentColor"
+              height="32"
+              viewBox="0 0 256 256"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

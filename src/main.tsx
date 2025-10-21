@@ -9,13 +9,17 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { Login } from './pages/Login/index.js';
 import { Chat } from './pages/Chat';
+import { Groups } from './pages/Groups';
 import { Profile } from './pages/Profile';
+import { Community } from './pages/Community';
+import { Settings } from './pages/Settings';
 
 import { startMirage } from './mocks/miragejs/index.js';
 
 import './index.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+
 
 if (import.meta.env.DEV) {
   startMirage();
@@ -31,6 +35,22 @@ const router = createBrowserRouter([
   {
     path: "/chat",
     element: <Chat />,
+  },
+  {
+    path: "/groups",
+    element: <Groups />,
+  },
+  {
+    path: "/groups",
+    element: <Groups />,
+  },
+  {
+    path: "/settings",
+    element: <Settings />,
+  },
+  {
+    path: "/community",
+    element: <Community />,
   },
   {
     path: "/profile",

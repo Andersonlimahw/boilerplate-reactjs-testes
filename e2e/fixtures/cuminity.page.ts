@@ -1,6 +1,6 @@
 import { Page, Locator } from '@playwright/test';
 
-export class ProfilePage {
+export class ComunityPage {
   readonly page: Page;
   readonly header: Locator;
   readonly welcomeText: Locator;
@@ -16,19 +16,19 @@ export class ProfilePage {
   constructor(page: Page) {
     this.page = page;
     this.header = page.locator('.bg-gradient-to-r').first();
-    this.welcomeText = page.getByText('Welcome to your profile!');
+    this.welcomeText = page.getByText('Happy customs!');
     this.instructionText = page.getByText('Request sample result on right!');
-    this.footer = page.getByTestId('footer');
+    this.footer = page.locator('footer');
     this.loadingComponent = page.getByTestId('loading-component');
-    this.errorComponent = page.getByTestId('error-api-component');
+    this.errorComponent = page.getByTestId('error-component');
     this.noContentComponent = page.getByTestId('no-content-component');
-    this.successTitle = page.getByText('Profile page');
+    this.successTitle = page.getByText('Lets code!');
     this.apiResponse = page.getByText('Api : Response');
     this.backButton = page.locator('[data-testid="back-button"]');
   }
 
   async goto() {
-    await this.page.goto('/profile');
+    await this.page.goto('/Comunity');
   }
 
   async waitForLoad() {

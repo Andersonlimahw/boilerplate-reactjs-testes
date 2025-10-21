@@ -2,16 +2,19 @@ import { test, expect } from '@playwright/test';
 import { LoginPage } from '../fixtures/login.page';
 import { ChatPage } from '../fixtures/chat.page';
 import { ProfilePage } from '../fixtures/profile.page';
+import { GroupsPage } from '../fixtures/groups.page';
 
 test.describe('Feature: Navegação e Rotas', () => {
   let loginPage: LoginPage;
   let chatPage: ChatPage;
   let profilePage: ProfilePage;
+  let groupsPage: GroupsPage;
 
   test.beforeEach(async ({ page }) => {
     loginPage = new LoginPage(page);
     chatPage = new ChatPage(page);
     profilePage = new ProfilePage(page);
+    groupsPage = new GroupsPage(page);
   });
 
   test('Cenário 1: Navegação de Login para Chat @navigation @smoke @critical @P0', async ({ page }) => {
@@ -63,6 +66,18 @@ test.describe('Feature: Navegação e Rotas', () => {
     await expect(profilePage.welcomeText).toBeVisible();
   });
 
+  test('Cenário 3A: Navegação direta via URL - Groups @navigation @routing @P0', async ({ page }) => {
+    await loginPage.goto();
+    await loginPage.clickLogin();
+    await page.waitForURL('/chat', { timeout: 5000 });
+
+    await page.goto('/groups');
+
+    expect(page.url()).toContain('/groups');
+    await expect(groupsPage.header).toBeVisible();
+    await expect(groupsPage.welcomeSection).toBeVisible();
+  });
+
   test('Cenário 4: Navegação usando botão voltar do navegador @navigation @browser @P1', async ({ page }) => {
     // Given: Dado que estou na página "/chat" e naveguei de "/" para "/chat"
     await loginPage.goto();
@@ -96,11 +111,20 @@ test.describe('Feature: Navegação e Rotas', () => {
     await expect(chatPage.header).toBeVisible();
   });
 
-  test('Cenário 6: Navegação entre Chat e Profile @navigation @P1', async ({ page }) => {
+  test('Cenário 6: Navegação entre Chat, Groups e Profile @navigation @P1', async ({ page }) => {
     // Given: Dado que estou na página "/chat"
     await loginPage.goto();
     await loginPage.clickLogin();
     await page.waitForURL('/chat', { timeout: 5000 });
+
+    // When: Quando eu navego para "/groups"
+    await page.goto('/groups');
+
+    // Then: Então a URL deve mudar para "/groups"
+    expect(page.url()).toContain('/groups');
+
+    // And: E a página de grupos deve ser carregada
+    await expect(groupsPage.header).toBeVisible();
 
     // When: Quando eu navego para "/profile"
     await page.goto('/profile');

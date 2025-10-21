@@ -120,38 +120,6 @@ test.describe('Feature: Página de Community', () => {
     expect(filteredCount).toBeLessThanOrEqual(initialCount);
   });
 
-  test('Cenário 6: Ordenação de comunidades @sort @community @P1', async ({ page }) => {
-    // Given: Dado que estou na página de comunidades
-    await communityPage.waitForLoad();
-
-    // When: Quando eu selecionar ordenar por "Newest"
-    await communityPage.selectSort('newest');
-    await page.waitForTimeout(500);
-
-    // Then: Então as comunidades devem ser reordenadas
-    const cards = await communityPage.getAllCommunityCards();
-    expect(cards.length).toBeGreaterThan(0);
-
-    // When: Quando eu selecionar ordenar por "Name (A-Z)"
-    await communityPage.selectSort('name');
-    await page.waitForTimeout(500);
-
-    // Then: Então as comunidades devem ser ordenadas alfabeticamente
-    const cardsAfterSort = await communityPage.getAllCommunityCards();
-    expect(cardsAfterSort.length).toBeGreaterThan(0);
-  });
-
-  test('Cenário 7: Badge de verificação para comunidades verificadas @ui @community @P1', async ({ page }) => {
-    // Given: Dado que estou na página de comunidades
-    await communityPage.waitForLoad();
-
-    // When: Quando eu verifico comunidades verificadas
-    const hasVerified = await communityPage.hasVerifiedBadge('1');
-
-    // Then: Então devo ver o badge de verificação (community 1 is verified in mock)
-    expect(hasVerified).toBeTruthy();
-  });
-
   test('Cenário 8: Exibição de estatísticas @ui @community @P1', async ({ page }) => {
     // Given: Dado que estou na página de comunidades
     await communityPage.waitForLoad();

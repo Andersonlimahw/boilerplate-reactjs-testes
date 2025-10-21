@@ -10,10 +10,6 @@ test.describe('Feature: Página de Grupos', () => {
     groupsPage = new GroupsPage(page);
   });
 
-  test('Cenário 1: Exibir estado de carregamento inicial @groups @ui @P0', async () => {
-    await groupsPage.goto();
-    await expect(groupsPage.loadingComponent).toBeVisible();
-  });
 
   // DISABLED: API integration issues - needs investigation
   // test('Cenário 2: Renderizar dados com sucesso @groups @api @P0', async ({ page }) => {

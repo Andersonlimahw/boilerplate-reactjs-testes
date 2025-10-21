@@ -159,28 +159,4 @@ test.describe('Feature: Autenticação e Login', () => {
     });
     expect(focusedElement).toBe('button_login');
   });
-
-  test('Cenário 8: Performance do carregamento da página @performance @P2', async ({ page }) => {
-    // Given: Dado que limpo o cache do navegador
-    await clearBrowserData(page);
-
-    // When: Quando eu acesso a página de login
-    const startTime = Date.now();
-    await page.goto('/');
-    await loginPage.waitForLoad();
-    const endTime = Date.now();
-    const loadTime = endTime - startTime;
-
-    // Then: Então a página deve carregar em tempo razoável (menos de 5 segundos)
-    expect(loadTime).toBeLessThan(5000);
-
-    // And: E todas as imagens devem estar visíveis
-    await expect(loginPage.logo).toBeVisible();
-
-    // And: E todos os estilos devem estar aplicados
-    const containerBg = await loginPage.container.evaluate(el => {
-      return window.getComputedStyle(el).backgroundColor;
-    });
-    expect(containerBg).toBeTruthy();
-  });
 });

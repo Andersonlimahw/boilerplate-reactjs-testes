@@ -1,9 +1,9 @@
-<h1 align="center">Welcome to amazing react boilerplate 👋</h1>
+<h1 align="center">React TestForge — Vitest + Playwright Starter</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 
   <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+    <img alt="License: Review repository terms" src="https://img.shields.io/badge/License-Review%20terms-yellow.svg" />
   </a>
 
   <a href="https://twitter.com/anderson.lima.dev" target="_blank">
@@ -48,12 +48,18 @@
    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vitest.svg"
  />
 
-> Boilerplate : PWA project using vite, react, zustand, tailwindcss, vitest, playwright and more!
+> A production-minded React testing starter with Vite, TypeScript, Vitest, Testing Library and Playwright.
 
 
 ### ✨ [Demo](https://lemon-firebase-chat-sample.vercel.app)
 
-Look a project using this boilerplate
+See a project using this starter.
+
+## Why TestForge?
+
+TestForge gives a React team a focused quality baseline instead of another empty Vite screen. Start with unit, component and end-to-end testing patterns, then adapt the app to your product without hiding the test runner or the data layer behind magic.
+
+The repository is public for learning and experimentation. It does not currently declare an SPDX license; review the repository terms before using it in a commercial product.
 
 ## Using
 
@@ -68,7 +74,7 @@ Or fork:
 
 Customize pages how you need!
 
-## ✨ Features ✨:
+## ✨ Features ✨
 
 * Created using vite a very fast front-end tooling
 
@@ -79,7 +85,7 @@ Customize pages how you need!
 
 * Base service to manage your requests
 * Mocks with miragejs
-* Vitest for unit tests and code coverage collect
+* Vitest and Testing Library for unit and component tests with coverage
 * Playwright for E2E testing with multi-browser support
 * Comprehensive testing suite (unit, component, and E2E tests)
 * PWA support with offline capabilities
